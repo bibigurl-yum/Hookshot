@@ -1,0 +1,299 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-g5ptsecz"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Work list | Hookshot</title><link rel="canonical" href="https://bibigurl-yum.github.io/Hookshot/guides/worklist/"/><link rel="sitemap" href="/Hookshot/sitemap-index.xml"/><link rel="shortcut icon" href="/Hookshot/assets/hookshot.png" type="image/png"/><meta name="generator" content="Astro v7.4.10"/><meta name="generator" content="Starlight v0.42.10"/><meta property="og:title" content="Work list"/><meta property="og:type" content="article"/><meta property="og:url" content="https://bibigurl-yum.github.io/Hookshot/guides/worklist/"/><meta property="og:locale" content="en"/><meta property="og:description" content="The community field guide to Hookshot. Install, explore settings, find answers, and contribute."/><meta property="og:site_name" content="Hookshot"/><meta name="twitter:card" content="summary_large_image"/><meta name="description" content="The community field guide to Hookshot. Install, explore settings, find answers, and contribute."/><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg aria-hidden="true" class="auto astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></template><link rel="stylesheet" href="/Hookshot/_astro/print.C9eyqPGL.css" media="print"><link rel="stylesheet" href="/Hookshot/_astro/common.CeoCbGqd.css"><script type="module" src="/Hookshot/_astro/page.cNngjUgL.js"></script></head><body class="astro-g5ptsecz"><a class="sl-skip-link astro-qb7clj6f" href="#_top">Skip to content</a><div class="page sl-flex astro-yntsjkba"><header class="header astro-yntsjkba"><div class="field-header"><a class="field-brand" href="/Hookshot/" aria-label="Hookshot field guide home"><img src="/Hookshot/assets/hookshot.png" alt="" width="38" height="38"><span>HOOKSHOT<small>THE FIELD GUIDE</small></span></a><div class="field-search"><site-search class=" astro-b5kgnn7o" data-translations="{&quot;placeholder&quot;:&quot;Search&quot;}"><button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" class="astro-b5kgnn7o"><svg aria-hidden="true" class="astro-b5kgnn7o astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg><span class="sl-hidden md:sl-block astro-b5kgnn7o" aria-hidden="true">Search</span><kbd class="sl-hidden md:sl-flex astro-b5kgnn7o" style="display: none"><kbd class="astro-b5kgnn7o">Ctrl</kbd><kbd class="astro-b5kgnn7o">K</kbd></kbd></button><dialog style="padding: 0" aria-label="Search" class="astro-b5kgnn7o"><div class="dialog-frame sl-flex astro-b5kgnn7o"><button data-close-modal class="sl-flex md:sl-hidden astro-b5kgnn7o">Cancel</button><div class="search-container astro-b5kgnn7o"><div id="starlight__search" class="astro-b5kgnn7o"></div></div></div></dialog></site-search><script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script><script type="module" src="/Hookshot/_astro/Search.astro_astro_type_script_index_0_lang.pD95yNT2.js"></script></div><div class="field-header-actions"><a class="github-link" href="https://github.com/NotRexed/Hookshot">GitHub <span aria-hidden="true">↗</span></a><a class="bug-link" href="https://github.com/NotRexed/Hookshot/issues/new/choose">Report a bug <span aria-hidden="true">↗</span></a><starlight-theme-select><label style="--sl-select-width: 6.25em" class="astro-2z5xp7gb"><span class="sr-only astro-2z5xp7gb">Select theme</span><svg aria-hidden="true" class="icon label-icon astro-2z5xp7gb astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><select autocomplete="off" class="astro-2z5xp7gb"><option value="dark" class="astro-2z5xp7gb">Dark</option><option value="light" class="astro-2z5xp7gb">Light</option><option value="auto" selected class="astro-2z5xp7gb">Auto</option></select><svg aria-hidden="true" class="icon caret astro-2z5xp7gb astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>
+	StarlightThemeProvider.updatePickers();
+</script><script type="module">var e=`starlight-theme`,t=e=>e===`auto`||e===`dark`||e===`light`?e:`auto`,n=()=>t(typeof localStorage<`u`&&localStorage.getItem(e));function r(t){typeof localStorage<`u`&&localStorage.setItem(e,t===`light`||t===`dark`?t:``)}var i=()=>matchMedia(`(prefers-color-scheme: light)`).matches?`light`:`dark`;function a(e){StarlightThemeProvider.updatePickers(e),document.documentElement.dataset.theme=e===`auto`?i():e,r(e)}matchMedia(`(prefers-color-scheme: light)`).addEventListener(`change`,()=>{n()===`auto`&&a(`auto`)});var o=class extends HTMLElement{constructor(){super(),a(n()),this.querySelector(`select`)?.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&a(t(e.currentTarget.value))})}};customElements.define(`starlight-theme-select`,o);</script></div></div></header><nav class="sidebar print:hidden astro-yntsjkba" aria-label="Main"><button popovertarget="starlight__sidebar" class="sl-menu-button sl-flex md:sl-hidden print:hidden astro-r2osgdlg"><svg aria-hidden="true" class="open-menu astro-r2osgdlg astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg><svg aria-hidden="true" class="close-menu astro-r2osgdlg astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="m13.41 12 6.3-6.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 0 1.42.998.998 0 0 0 1.42 0l6.29-6.3 6.29 6.3a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"/></svg><span class="sr-only astro-r2osgdlg">Menu</span></button><script type="module">var e=class extends HTMLElement{constructor(){super();let e=matchMedia(`(min-width: 50em)`),t=()=>{this.popover=e.matches?null:`auto`};t(),e.addEventListener(`change`,()=>t()),this.addEventListener(`toggle`,({newState:e})=>this.trapFocus(e===`open`))}trapFocus(e){document.querySelectorAll(`.main-frame, .sl-skip-link`).forEach(t=>{t.toggleAttribute(`inert`,e)})}};customElements.define(`sl-sidebar-pane`,e);</script><script type="module">var e=class extends HTMLElement{constructor(){super();let e=this.querySelector(`select`);e&&(e.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=e.currentTarget.value)}),window.addEventListener(`pageshow`,t=>{if(!t.persisted)return;let n=e.querySelector(`option[selected]`)?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}};customElements.define(`starlight-lang-select`,e);</script><sl-sidebar-pane popover id="starlight__sidebar" class="sidebar-pane astro-yntsjkba"><div class="sidebar-content sl-flex astro-yntsjkba"><sl-sidebar-state-persist data-hash="0d2jt30" class="astro-ipdry5cl"><script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script><ul class="top-level astro-rmhv4bp6"><li class="astro-rmhv4bp6"><a href="/Hookshot/" class="large astro-rmhv4bp6"><span class="astro-rmhv4bp6">The field guide</span></a></li><li class="astro-rmhv4bp6"><details open class="astro-rmhv4bp6"><summary class="astro-rmhv4bp6"><span class="group-label astro-rmhv4bp6"><span class="large astro-rmhv4bp6">Begin your adventure</span></span><svg aria-hidden="true" class="caret astro-rmhv4bp6 astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="0"></sl-sidebar-restore><ul class="astro-rmhv4bp6"><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/getting-started/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Getting started</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/graphics-and-controls/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Graphics &amp; controls</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/updates-and-saves/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Updates &amp; saves</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/saves/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Transfer a save</span></a></li></ul></details></li><li class="astro-rmhv4bp6"><details open class="astro-rmhv4bp6"><summary class="astro-rmhv4bp6"><span class="group-label astro-rmhv4bp6"><span class="large astro-rmhv4bp6">Find your way</span></span><svg aria-hidden="true" class="caret astro-rmhv4bp6 astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="1"></sl-sidebar-restore><ul class="astro-rmhv4bp6"><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/common-issues/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Common issues</span><span class="sl-badge note small  astro-rmhv4bp6 astro-f4zorn72">11 answers</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/reporting-and-contributing/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Report &amp; contribute</span></a></li><li class="astro-rmhv4bp6"><a href="https://github.com/NotRexed/Hookshot/issues/new/choose" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Report a bug ↗</span></a></li></ul></details></li><li class="astro-rmhv4bp6"><details class="astro-rmhv4bp6"><summary class="astro-rmhv4bp6"><span class="group-label astro-rmhv4bp6"><span class="large astro-rmhv4bp6">Under the hood</span></span><svg aria-hidden="true" class="caret astro-rmhv4bp6 astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="2"></sl-sidebar-restore><ul class="astro-rmhv4bp6"><li class="astro-rmhv4bp6"><a href="/Hookshot/reference/manual/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Reference manual</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/development/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Development</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/design/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Architecture</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/reference/contributing/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Contributing</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/technical-notes/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Technical notes</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/versioning/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Versioning</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/workflow/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Workflow</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/reference/pipeline-states/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Pipeline lists</span></a></li></ul></details></li><li class="astro-rmhv4bp6"><a href="/Hookshot/about/" class="large astro-rmhv4bp6"><span class="astro-rmhv4bp6">About the preview</span></a></li></ul><script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script></sl-sidebar-state-persist><div class="md:sl-hidden"><div class="mobile-preferences sl-flex astro-p4azlveh"><div class="social-icons astro-p4azlveh"></div><starlight-theme-select><label style="--sl-select-width: 6.25em" class="astro-2z5xp7gb"><span class="sr-only astro-2z5xp7gb">Select theme</span><svg aria-hidden="true" class="icon label-icon astro-2z5xp7gb astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><select autocomplete="off" class="astro-2z5xp7gb"><option value="dark" class="astro-2z5xp7gb">Dark</option><option value="light" class="astro-2z5xp7gb">Light</option><option value="auto" selected class="astro-2z5xp7gb">Auto</option></select><svg aria-hidden="true" class="icon caret astro-2z5xp7gb astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>
+	StarlightThemeProvider.updatePickers();
+</script></div></div></div></sl-sidebar-pane></nav><div class="main-frame astro-yntsjkba"><script type="module">var e=document.getElementById(`starlight__sidebar`),t=e?.querySelector(`sl-sidebar-state-persist`),n=`sl-sidebar-state`,r=()=>{let r=[],i=t?.dataset.hash||``;try{let e=sessionStorage.getItem(n),t=JSON.parse(e||`{}`);Array.isArray(t.open)&&t.hash===i&&(r=t.open)}catch{}return{hash:i,open:r,scroll:e?.scrollTop||0}},i=e=>{try{sessionStorage.setItem(n,JSON.stringify(e))}catch{}},a=()=>i(r()),o=(e,t)=>{let n=r();n.open[t]=e,i(n)};t?.addEventListener(`click`,e=>{if(!(e.target instanceof Element))return;let t=e.target.closest(`summary`)?.closest(`details`);if(!t)return;let n=t.querySelector(`sl-sidebar-restore`),r=parseInt(n?.dataset.index||``);isNaN(r)||o(!t.open,r)}),addEventListener(`visibilitychange`,()=>{document.visibilityState===`hidden`&&a()});</script><div class="lg:sl-flex astro-lrzkfocr"><aside class="right-sidebar-container print:hidden astro-lrzkfocr"><div class="right-sidebar astro-lrzkfocr"><div class="lg:sl-hidden astro-qok35upx"><mobile-starlight-toc data-min-h="2" data-max-h="2" class="astro-66cqc7ze"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-66cqc7ze"><details id="starlight__mobile-toc" class="astro-66cqc7ze"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-66cqc7ze"><span class="toggle sl-flex astro-66cqc7ze">On this page<svg aria-hidden="true" class="caret astro-66cqc7ze astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-66cqc7ze"></span></summary><div class="dropdown astro-66cqc7ze"><ul class="isMobile astro-jugkfwgx" style="--depth: 0;"><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#_top" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Overview</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#open" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Open</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#fixed-waiting-for-a-release" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Fixed, waiting for a release</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#parked" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Parked</span></a></li></ul></div></details></nav></mobile-starlight-toc><script type="module" src="/Hookshot/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C3fM4Kra.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-qok35upx"><div class="sl-container astro-qok35upx"><starlight-toc data-min-h="2" data-max-h="2"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-jugkfwgx" style="--depth: 0;"><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#_top" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Overview</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#open" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Open</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#fixed-waiting-for-a-release" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Fixed, waiting for a release</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#parked" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Parked</span></a></li></ul></nav></starlight-toc><script type="module" src="/Hookshot/_astro/TableOfContents.astro_astro_type_script_index_0_lang.BpJaGz7G.js"></script></div></div></div></aside><div class="main-pane astro-lrzkfocr"><main data-pagefind-body class="astro-g5ptsecz" lang="en" dir="ltr"><div class="content-panel astro-a7po4psb"><div class="sl-container astro-a7po4psb"><h1 id="_top" class="astro-bebwqqxs">Work list</h1></div></div><div class="content-panel astro-a7po4psb"><div class="sl-container astro-a7po4psb"><div class="sl-markdown-content"><p>The prioritized list of open work, scored as <a href="/Hookshot/guides/workflow/">docs/workflow.md</a> describes: <strong>score = severity weight x
+reach x confidence</strong> (S0 8, S1 5, S2 3, S3 1; reach 0-1 from <code dir="auto">scripts/hardware_report.py</code> and the Steam survey;
+confidence 1.0 reproduced with a log, 0.7 two or more reporters with logs, 0.4 one report or no log). Work from the
+top of <strong>Open</strong>. A GitHub issue stays the full record; this list is the order.</p>
+<p>How to use it:</p>
+<ul>
+<li><strong>Pick:</strong> take the highest-scored row with no owner that you can reproduce on your hardware, claim it in Discord
+#dev-work, and put your name in <em>Owner</em> in the same PR that starts the work (or a one-line PR).</li>
+<li><strong>Add:</strong> a new report becomes a row in <strong>Open</strong> with its three parts filled in, so the score can be checked. Link the
+issue or the Discord thread. One row per problem: if a row already covers it, add the link to that row and raise its
+confidence instead of adding a second row.</li>
+<li><strong>Move:</strong> when a PR merges, move the row to <strong>Fixed, waiting for a release</strong> with the PR; when a release ships it,
+delete the row (the release notes are the record). A row nobody can reproduce for two weeks, with logs asked for,
+goes to <strong>Parked</strong>.</li>
+<li>Keep each table sorted by score, highest first. Re-score when new logs or hardware numbers arrive.</li>
+</ul>
+<p>Agents may add and re-score rows; a person reviews the change like any other PR.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="open">Open</h2><a class="sl-anchor-link" href="#open"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Open”</span></a></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: right">Score</th>
+<th>Problem</th>
+<th>S</th>
+<th style="text-align: right">Reach</th>
+<th style="text-align: right">Conf.</th>
+<th>Owner</th>
+<th>Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right">4.6</td>
+<td>Windows updater checks asset length but not GitHub’s SHA256 digest before setup launch or ZIP extraction; verify both download routes (signing remains separate)</td>
+<td>S0</td>
+<td style="text-align: right">0.57</td>
+<td style="text-align: right">1.0</td>
+<td>monsterlag</td>
+<td>#1679; #1792; actual updater accepts same-length altered setup/ZIP in authored HTTP tests; fixed 20/20 cases pass</td>
+</tr>
+<tr>
+<td style="text-align: right">2.1</td>
+<td>Ground and outdoor textures garble after a while of play and come back after a restart or going to the title; the logs differ on what the texture cache does: aris (9070 XT 16 GB) runs into the fixed 6 GB texture budget (6144 MB even on 16 GB cards, <code dir="auto">vk_texture.cpp</code> texture_frame), peaking at 5941 MB, with 191 eviction passes of 20+ textures from present 1920 on (18,522 retired); steuer (9070 XT) stays at 3.3 GB, far under it, yet retires 28,003, the render-target sweeps; Flavor (RX 6700 XT) at 4.8 GB, with VRAM at 9.6 of the 10.0 GB the driver allows. <code dir="auto">RX_VK_ASTC_RGBA8=1</code> took effect for aris (texture arrays 4x larger) and did not help. Reports: 9070 XT x2 (logs, v2.0.13), RX 6700 XT (v2.0.14 log; “entering new areas sometimes textures never load until a restart”), RTX 4080 (no log), RTX 5060 Ti (v2.0.5 log). Next: a long walk with <code dir="auto">RX_VK_LOG_REMADE=1</code> (logs textures made again and sampled EMPTY), at the default budget and at a small <code dir="auto">RX_VK_VRAM_MB</code>; for users at the budget, try a bigger <code dir="auto">RX_VK_VRAM_MB</code></td>
+<td>S2</td>
+<td style="text-align: right">1.0</td>
+<td style="text-align: right">0.7</td>
+<td>Joey-Magnus</td>
+<td>#993; #bug-reporting “texture glitch on 9070 XT”, “Ground design is not loading properly”, “Dodongo Cavern, floor texture glitch”, “General texture loading hooking issues”; merged rows: “Ground looks smeared, without detail” (Kokiri Forest / Lost Woods, Dodongo’s Cave, Hyrule Field) and “AMD RX 9070 XT: texture glitch that appears after some play” (#57, #1006)</td>
+</tr>
+<tr>
+<td style="text-align: right">2.1</td>
+<td>Camera turns in Kokiri Forest stutter: 46 fps minimum, dips to 38 (14700KF); goal is a 60 fps minimum</td>
+<td>S2</td>
+<td style="text-align: right">1.0</td>
+<td style="text-align: right">0.7</td>
+<td>Joey-Magnus</td>
+<td>Reddit report; #1762 (+13.5% in the village view; 57 of 60); next: the once-a-frame CPU wait for the GPU in take_capture (exposure page): +20% without it, design asked of hckrman101 in #dev-work</td>
+</tr>
+<tr>
+<td style="text-align: right">2.0</td>
+<td>Antivirus flags HookshotBuilder.exe (Defender <code dir="auto">Wacatac.H!ml</code> / <code dir="auto">Wacatac.B!ml</code>, Chrome on v2.0.12): new unsigned exe, no reputation. Waiting on the SignPath open-source signing application; then sign in <code dir="auto">windows-builder.yml</code> and publish the signed files</td>
+<td>S1</td>
+<td style="text-align: right">0.57</td>
+<td style="text-align: right">0.7</td>
+<td>NotRexed (SignPath)</td>
+<td>#1003, #525, #1620; checksums: #1307</td>
+</tr>
+<tr>
+<td style="text-align: right">1.2</td>
+<td>Link keeps playing a jump animation in dialogue after the Gohma fight (gameplay fine): cutscenes and dialogue run at the frame rate above a 60 cap since #1612 (v2.0.13); work-around: cap at 60</td>
+<td>S2</td>
+<td style="text-align: right">1.0</td>
+<td style="text-align: right">0.4</td>
+<td></td>
+<td>#1742 (#1726 closed into it); #bug-reporting “My link is jumping forever”</td>
+</tr>
+<tr>
+<td style="text-align: right">1.1</td>
+<td>Setup stops when Windows’ tar.exe cannot be found (launch error 2); explain the missing tool and manual Windows repair steps. Reach uses Windows’ upper bound; the missing-tool subset is unknown</td>
+<td>S1</td>
+<td style="text-align: right">0.57</td>
+<td style="text-align: right">0.4</td>
+<td>monsterlag</td>
+<td>#1896; #1922; diagnostic alternative tested: Windows 18 cases, Linux 16; affected-machine repair remains unverified</td>
+</tr>
+<tr>
+<td style="text-align: right">1.0</td>
+<td>Source checks fail after stream/descriptor admission merges: missing production stream_insert dependency and descriptor-pool fixture environment. CI-first; reproduced on main</td>
+<td>S3</td>
+<td style="text-align: right">1.0</td>
+<td style="text-align: right">1.0</td>
+<td>Arkex-ai</td>
+<td><a href="https://github.com/NotRexed/Hookshot/issues/1813">#1813</a>, <a href="https://discord.com/channels/1568810484818378804/1569019786766188665/1569763504758464609">claim</a></td>
+</tr>
+<tr>
+<td style="text-align: right">0.6</td>
+<td>Windows Builder’s Show details link opens the log when blank footer space is clicked; limit its hit area to its content</td>
+<td>S3</td>
+<td style="text-align: right">0.57</td>
+<td style="text-align: right">1.0</td>
+<td>monsterlag</td>
+<td>#1842; actual offscreen WPF footer reproduces two blank-space hit failures and four label/Cancel controls</td>
+</tr>
+<tr>
+<td style="text-align: right">0.6</td>
+<td>Zora’s Domain textures missing in the adult timeline (points to VRAM pressure, not the dump)</td>
+<td>S2</td>
+<td style="text-align: right">0.3</td>
+<td style="text-align: right">0.7</td>
+<td></td>
+<td>#bug-reporting “Zora Domain textures missing?”</td>
+</tr>
+<tr>
+<td style="text-align: right">0.5</td>
+<td>Sacred Forest Meadow fairy fountain grotto: floor and walls invisible (RTX 2070 Super)</td>
+<td>S2</td>
+<td style="text-align: right">0.4</td>
+<td style="text-align: right">0.4</td>
+<td></td>
+<td>#bug-reporting thread</td>
+</tr>
+<tr>
+<td style="text-align: right">0.4</td>
+<td>Voices in the wrong language</td>
+<td>S3</td>
+<td style="text-align: right">1.0</td>
+<td style="text-align: right">0.4</td>
+<td></td>
+<td>#1460 (needs a save past Gohma)</td>
+</tr>
+<tr>
+<td style="text-align: right">0.39</td>
+<td>RTX 30: crash a few frames into gameplay after the intro (null write in game code on OptimizeChangeBanc, after a fragment program reads a storage buffer at an unmapped address 0x4180000000000200); since v2.0.12, still on v2.0.14; not on RTX 40</td>
+<td>S0</td>
+<td style="text-align: right">0.07</td>
+<td style="text-align: right">0.7</td>
+<td></td>
+<td>#1697 (logs v2.0.13 and v2.0.14); #dev-work findings</td>
+</tr>
+<tr>
+<td style="text-align: right">0.29</td>
+<td>Amd RX 580 (Polaris, no mesh shaders): hair renders white and bright, and the game crashes when Link moves; a second RX 580 8 GB user reports the same</td>
+<td>S1</td>
+<td style="text-align: right">0.145</td>
+<td style="text-align: right">0.4</td>
+<td></td>
+<td>#bug-reporting “Amd rx 580 crashes” (no log yet)</td>
+</tr>
+<tr>
+<td style="text-align: right">0.22</td>
+<td>RTX 3070 with Frame generation on: uncaught C++ exception in hookshot_vk.dll on the first FSR 3 frame-generation inputs as gameplay starts (v2.0.13)</td>
+<td>S0</td>
+<td style="text-align: right">0.07</td>
+<td style="text-align: right">0.4</td>
+<td></td>
+<td>#1786 (closed as a duplicate of #1697, but a different crash)</td>
+</tr>
+<tr>
+<td style="text-align: right">0.11</td>
+<td>Intel GPU: black screen after loading a save (or on the Deku Tree), sound only, very low fps; three reports, no logs yet; tracked in the GitHub issue linked in #bug-reporting replies (#999)</td>
+<td>S0</td>
+<td style="text-align: right">0.035</td>
+<td style="text-align: right">0.4</td>
+<td></td>
+<td>#bug-reporting “Intel G3E. Title and intro loads…”, “intel arc b580 problems”, “game gets stuck on a black screen when loading a save (intel gpu… gulp…)”</td>
+</tr>
+<tr>
+<td style="text-align: right">0.11</td>
+<td>Crash at the door after the owl intro (Navi wakes Link, 2.0.13): access violation in <code dir="auto">igvk64.dll</code> at start-up; GPU: Intel UHD Graphics (i3-1115G4, 128 MB shared, no mesh shaders: the best-effort fallback, #1001); reach is Intel’s 3.5%</td>
+<td>S0</td>
+<td style="text-align: right">0.035</td>
+<td style="text-align: right">0.4</td>
+<td></td>
+<td>#bug-reporting “2.0.13 Crash after you see the owl during intro cutscene” (5 logs)</td>
+</tr>
+</tbody>
+</table>
+<div class="sl-heading-wrapper level-h2"><h2 id="fixed-waiting-for-a-release">Fixed, waiting for a release</h2><a class="sl-anchor-link" href="#fixed-waiting-for-a-release"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Fixed, waiting for a release”</span></a></div>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Fixed by</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Every OoT shader program now translates (10 did not: TLD.MS, LDG/STG ordering, ISBERD.O, an immediate read as R254 + compute local memory, R2UR, a loop ending at its self-branch)</td>
+<td>#1769, #1778, #1789, #1800, #1806, #1810</td>
+<td>in <code dir="auto">main</code>, not in v2.0.13</td>
+</tr>
+<tr>
+<td>1D surface loads (SULD.1D) stop 16-17 compute programs from translating; fits the green glow on a Legion Go 2 (890M)</td>
+<td>#1447</td>
+<td>in <code dir="auto">main</code>, not in v2.0.13 (log: #bug-reporting “Bugs 2.0.13 Dodaza”)</td>
+</tr>
+<tr>
+<td>Integer min/max with a wide immediate (IMNMX) does not translate</td>
+<td>#1451</td>
+<td>in <code dir="auto">main</code>, not in v2.0.13 (log: #bug-reporting “Bugs 2.0.13 Dodaza”)</td>
+</tr>
+<tr>
+<td>Insert menu purple with HDR10 on (v2.0.13 GDI overlay drawn into the HDR swapchain unconverted)</td>
+<td><code dir="auto">main</code>’s ImGui overlay (<code dir="auto">hdr10()</code>)</td>
+<td>needs the release branch merged back into <code dir="auto">main</code></td>
+</tr>
+</tbody>
+</table>
+<div class="sl-heading-wrapper level-h2"><h2 id="parked">Parked</h2><a class="sl-anchor-link" href="#parked"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Parked”</span></a></div>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Why parked</th>
+<th>Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div><footer class="sl-flex astro-ddtxxk7k"><div class="meta sl-flex astro-ddtxxk7k"><a href="https://github.com/bibigurl-yum/Hookshot/edit/docs/starlight-preview/docs/worklist.md" class="sl-flex print:hidden astro-qlekgd3o"><svg aria-hidden="true" class="astro-qlekgd3o astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.2em;"><path d="M22 7.24a1 1 0 0 0-.29-.71l-4.24-4.24a1 1 0 0 0-1.1-.22 1 1 0 0 0-.32.22l-2.83 2.83L2.29 16.05a1 1 0 0 0-.29.71V21a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .76-.29l10.87-10.93L21.71 8c.1-.1.17-.2.22-.33a1 1 0 0 0 0-.24v-.14l.07-.05ZM6.83 20H4v-2.83l9.93-9.93 2.83 2.83L6.83 20ZM18.17 8.66l-2.83-2.83 1.42-1.41 2.82 2.82-1.41 1.42Z"/></svg>Edit page</a></div><div class="pagination-links print:hidden astro-b5raizh3" dir="ltr"></div></footer><div class="field-footer"><p><strong>HOOKSHOT</strong> <span>The community field guide</span></p><nav aria-label="Footer"><a href="/Hookshot/about/">About this preview</a><a href="https://github.com/NotRexed/Hookshot/issues/new/choose">Report a bug ↗</a><a href="https://github.com/NotRexed/Hookshot">Source ↗</a></nav><small>Independent community project. Not affiliated with Nintendo. Built with Astro Starlight.</small></div></div></div></main></div></div></div></div></body></html>

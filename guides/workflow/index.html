@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-g5ptsecz"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Workflow: from report to release | Hookshot</title><link rel="canonical" href="https://bibigurl-yum.github.io/Hookshot/guides/workflow/"/><link rel="sitemap" href="/Hookshot/sitemap-index.xml"/><link rel="shortcut icon" href="/Hookshot/assets/hookshot.png" type="image/png"/><meta name="generator" content="Astro v7.4.10"/><meta name="generator" content="Starlight v0.42.10"/><meta property="og:title" content="Workflow: from report to release"/><meta property="og:type" content="article"/><meta property="og:url" content="https://bibigurl-yum.github.io/Hookshot/guides/workflow/"/><meta property="og:locale" content="en"/><meta property="og:description" content="The community field guide to Hookshot. Install, explore settings, find answers, and contribute."/><meta property="og:site_name" content="Hookshot"/><meta name="twitter:card" content="summary_large_image"/><meta name="description" content="The community field guide to Hookshot. Install, explore settings, find answers, and contribute."/><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg aria-hidden="true" class="auto astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></template><link rel="stylesheet" href="/Hookshot/_astro/print.C9eyqPGL.css" media="print"><link rel="stylesheet" href="/Hookshot/_astro/common.CeoCbGqd.css"><script type="module" src="/Hookshot/_astro/page.cNngjUgL.js"></script></head><body class="astro-g5ptsecz"><a class="sl-skip-link astro-qb7clj6f" href="#_top">Skip to content</a><div class="page sl-flex astro-yntsjkba"><header class="header astro-yntsjkba"><div class="field-header"><a class="field-brand" href="/Hookshot/" aria-label="Hookshot field guide home"><img src="/Hookshot/assets/hookshot.png" alt="" width="38" height="38"><span>HOOKSHOT<small>THE FIELD GUIDE</small></span></a><div class="field-search"><site-search class=" astro-b5kgnn7o" data-translations="{&quot;placeholder&quot;:&quot;Search&quot;}"><button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" class="astro-b5kgnn7o"><svg aria-hidden="true" class="astro-b5kgnn7o astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg><span class="sl-hidden md:sl-block astro-b5kgnn7o" aria-hidden="true">Search</span><kbd class="sl-hidden md:sl-flex astro-b5kgnn7o" style="display: none"><kbd class="astro-b5kgnn7o">Ctrl</kbd><kbd class="astro-b5kgnn7o">K</kbd></kbd></button><dialog style="padding: 0" aria-label="Search" class="astro-b5kgnn7o"><div class="dialog-frame sl-flex astro-b5kgnn7o"><button data-close-modal class="sl-flex md:sl-hidden astro-b5kgnn7o">Cancel</button><div class="search-container astro-b5kgnn7o"><div id="starlight__search" class="astro-b5kgnn7o"></div></div></div></dialog></site-search><script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script><script type="module" src="/Hookshot/_astro/Search.astro_astro_type_script_index_0_lang.pD95yNT2.js"></script></div><div class="field-header-actions"><a class="github-link" href="https://github.com/NotRexed/Hookshot">GitHub <span aria-hidden="true">↗</span></a><a class="bug-link" href="https://github.com/NotRexed/Hookshot/issues/new/choose">Report a bug <span aria-hidden="true">↗</span></a><starlight-theme-select><label style="--sl-select-width: 6.25em" class="astro-2z5xp7gb"><span class="sr-only astro-2z5xp7gb">Select theme</span><svg aria-hidden="true" class="icon label-icon astro-2z5xp7gb astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><select autocomplete="off" class="astro-2z5xp7gb"><option value="dark" class="astro-2z5xp7gb">Dark</option><option value="light" class="astro-2z5xp7gb">Light</option><option value="auto" selected class="astro-2z5xp7gb">Auto</option></select><svg aria-hidden="true" class="icon caret astro-2z5xp7gb astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>
+	StarlightThemeProvider.updatePickers();
+</script><script type="module">var e=`starlight-theme`,t=e=>e===`auto`||e===`dark`||e===`light`?e:`auto`,n=()=>t(typeof localStorage<`u`&&localStorage.getItem(e));function r(t){typeof localStorage<`u`&&localStorage.setItem(e,t===`light`||t===`dark`?t:``)}var i=()=>matchMedia(`(prefers-color-scheme: light)`).matches?`light`:`dark`;function a(e){StarlightThemeProvider.updatePickers(e),document.documentElement.dataset.theme=e===`auto`?i():e,r(e)}matchMedia(`(prefers-color-scheme: light)`).addEventListener(`change`,()=>{n()===`auto`&&a(`auto`)});var o=class extends HTMLElement{constructor(){super(),a(n()),this.querySelector(`select`)?.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&a(t(e.currentTarget.value))})}};customElements.define(`starlight-theme-select`,o);</script></div></div></header><nav class="sidebar print:hidden astro-yntsjkba" aria-label="Main"><button popovertarget="starlight__sidebar" class="sl-menu-button sl-flex md:sl-hidden print:hidden astro-r2osgdlg"><svg aria-hidden="true" class="open-menu astro-r2osgdlg astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg><svg aria-hidden="true" class="close-menu astro-r2osgdlg astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="m13.41 12 6.3-6.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 0 1.42.998.998 0 0 0 1.42 0l6.29-6.3 6.29 6.3a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"/></svg><span class="sr-only astro-r2osgdlg">Menu</span></button><script type="module">var e=class extends HTMLElement{constructor(){super();let e=matchMedia(`(min-width: 50em)`),t=()=>{this.popover=e.matches?null:`auto`};t(),e.addEventListener(`change`,()=>t()),this.addEventListener(`toggle`,({newState:e})=>this.trapFocus(e===`open`))}trapFocus(e){document.querySelectorAll(`.main-frame, .sl-skip-link`).forEach(t=>{t.toggleAttribute(`inert`,e)})}};customElements.define(`sl-sidebar-pane`,e);</script><script type="module">var e=class extends HTMLElement{constructor(){super();let e=this.querySelector(`select`);e&&(e.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=e.currentTarget.value)}),window.addEventListener(`pageshow`,t=>{if(!t.persisted)return;let n=e.querySelector(`option[selected]`)?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}};customElements.define(`starlight-lang-select`,e);</script><sl-sidebar-pane popover id="starlight__sidebar" class="sidebar-pane astro-yntsjkba"><div class="sidebar-content sl-flex astro-yntsjkba"><sl-sidebar-state-persist data-hash="0d2jt30" class="astro-ipdry5cl"><script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script><ul class="top-level astro-rmhv4bp6"><li class="astro-rmhv4bp6"><a href="/Hookshot/" class="large astro-rmhv4bp6"><span class="astro-rmhv4bp6">The field guide</span></a></li><li class="astro-rmhv4bp6"><details open class="astro-rmhv4bp6"><summary class="astro-rmhv4bp6"><span class="group-label astro-rmhv4bp6"><span class="large astro-rmhv4bp6">Begin your adventure</span></span><svg aria-hidden="true" class="caret astro-rmhv4bp6 astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="0"></sl-sidebar-restore><ul class="astro-rmhv4bp6"><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/getting-started/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Getting started</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/graphics-and-controls/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Graphics &amp; controls</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/updates-and-saves/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Updates &amp; saves</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/saves/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Transfer a save</span></a></li></ul></details></li><li class="astro-rmhv4bp6"><details open class="astro-rmhv4bp6"><summary class="astro-rmhv4bp6"><span class="group-label astro-rmhv4bp6"><span class="large astro-rmhv4bp6">Find your way</span></span><svg aria-hidden="true" class="caret astro-rmhv4bp6 astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="1"></sl-sidebar-restore><ul class="astro-rmhv4bp6"><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/common-issues/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Common issues</span><span class="sl-badge note small  astro-rmhv4bp6 astro-f4zorn72">11 answers</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/reporting-and-contributing/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Report &amp; contribute</span></a></li><li class="astro-rmhv4bp6"><a href="https://github.com/NotRexed/Hookshot/issues/new/choose" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Report a bug ↗</span></a></li></ul></details></li><li class="astro-rmhv4bp6"><details open class="astro-rmhv4bp6"><summary class="astro-rmhv4bp6"><span class="group-label astro-rmhv4bp6"><span class="large astro-rmhv4bp6">Under the hood</span></span><svg aria-hidden="true" class="caret astro-rmhv4bp6 astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="2"></sl-sidebar-restore><ul class="astro-rmhv4bp6"><li class="astro-rmhv4bp6"><a href="/Hookshot/reference/manual/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Reference manual</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/development/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Development</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/design/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Architecture</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/reference/contributing/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Contributing</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/technical-notes/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Technical notes</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/versioning/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Versioning</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/guides/workflow/" aria-current="page" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Workflow</span></a></li><li class="astro-rmhv4bp6"><a href="/Hookshot/reference/pipeline-states/" class="astro-rmhv4bp6"><span class="astro-rmhv4bp6">Pipeline lists</span></a></li></ul></details></li><li class="astro-rmhv4bp6"><a href="/Hookshot/about/" class="large astro-rmhv4bp6"><span class="astro-rmhv4bp6">About the preview</span></a></li></ul><script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script></sl-sidebar-state-persist><div class="md:sl-hidden"><div class="mobile-preferences sl-flex astro-p4azlveh"><div class="social-icons astro-p4azlveh"></div><starlight-theme-select><label style="--sl-select-width: 6.25em" class="astro-2z5xp7gb"><span class="sr-only astro-2z5xp7gb">Select theme</span><svg aria-hidden="true" class="icon label-icon astro-2z5xp7gb astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><select autocomplete="off" class="astro-2z5xp7gb"><option value="dark" class="astro-2z5xp7gb">Dark</option><option value="light" class="astro-2z5xp7gb">Light</option><option value="auto" selected class="astro-2z5xp7gb">Auto</option></select><svg aria-hidden="true" class="icon caret astro-2z5xp7gb astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>
+	StarlightThemeProvider.updatePickers();
+</script></div></div></div></sl-sidebar-pane></nav><div class="main-frame astro-yntsjkba"><script type="module">var e=document.getElementById(`starlight__sidebar`),t=e?.querySelector(`sl-sidebar-state-persist`),n=`sl-sidebar-state`,r=()=>{let r=[],i=t?.dataset.hash||``;try{let e=sessionStorage.getItem(n),t=JSON.parse(e||`{}`);Array.isArray(t.open)&&t.hash===i&&(r=t.open)}catch{}return{hash:i,open:r,scroll:e?.scrollTop||0}},i=e=>{try{sessionStorage.setItem(n,JSON.stringify(e))}catch{}},a=()=>i(r()),o=(e,t)=>{let n=r();n.open[t]=e,i(n)};t?.addEventListener(`click`,e=>{if(!(e.target instanceof Element))return;let t=e.target.closest(`summary`)?.closest(`details`);if(!t)return;let n=t.querySelector(`sl-sidebar-restore`),r=parseInt(n?.dataset.index||``);isNaN(r)||o(!t.open,r)}),addEventListener(`visibilitychange`,()=>{document.visibilityState===`hidden`&&a()});</script><div class="lg:sl-flex astro-lrzkfocr"><aside class="right-sidebar-container print:hidden astro-lrzkfocr"><div class="right-sidebar astro-lrzkfocr"><div class="lg:sl-hidden astro-qok35upx"><mobile-starlight-toc data-min-h="2" data-max-h="2" class="astro-66cqc7ze"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-66cqc7ze"><details id="starlight__mobile-toc" class="astro-66cqc7ze"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-66cqc7ze"><span class="toggle sl-flex astro-66cqc7ze">On this page<svg aria-hidden="true" class="caret astro-66cqc7ze astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-66cqc7ze"></span></summary><div class="dropdown astro-66cqc7ze"><ul class="isMobile astro-jugkfwgx" style="--depth: 0;"><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#_top" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Overview</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#1-where-work-comes-from" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">1. Where work comes from</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#2-priority-what-to-work-on-first" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">2. Priority: what to work on first</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#3-the-lifecycle" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">3. The lifecycle</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#4-the-security-lane" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">4. The security lane</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#5-keeping-the-board-readable" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">5. Keeping the board readable</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#for-agents" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">For agents</span></a></li></ul></div></details></nav></mobile-starlight-toc><script type="module" src="/Hookshot/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C3fM4Kra.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-qok35upx"><div class="sl-container astro-qok35upx"><starlight-toc data-min-h="2" data-max-h="2"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-jugkfwgx" style="--depth: 0;"><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#_top" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">Overview</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#1-where-work-comes-from" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">1. Where work comes from</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#2-priority-what-to-work-on-first" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">2. Priority: what to work on first</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#3-the-lifecycle" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">3. The lifecycle</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#4-the-security-lane" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">4. The security lane</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#5-keeping-the-board-readable" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">5. Keeping the board readable</span></a></li><li style="--depth: 0;" class="astro-jugkfwgx"><a href="#for-agents" style="--depth: 0;" class="astro-jugkfwgx"><span style="--depth: 0;" class="astro-jugkfwgx">For agents</span></a></li></ul></nav></starlight-toc><script type="module" src="/Hookshot/_astro/TableOfContents.astro_astro_type_script_index_0_lang.BpJaGz7G.js"></script></div></div></div></aside><div class="main-pane astro-lrzkfocr"><main data-pagefind-body class="astro-g5ptsecz" lang="en" dir="ltr"><div class="content-panel astro-a7po4psb"><div class="sl-container astro-a7po4psb"><h1 id="_top" class="astro-bebwqqxs">Workflow: from report to release</h1></div></div><div class="content-panel astro-a7po4psb"><div class="sl-container astro-a7po4psb"><div class="sl-markdown-content"><p>How work moves through Hookshot, and how to decide what to work on next. It is written for people and for AI agents
+alike (agents: <a href="https://github.com/NotRexed/Hookshot/blob/main/AGENTS.md">AGENTS.md</a> sends you here). <a href="/Hookshot/reference/contributing/">CONTRIBUTING.md</a> still holds the rules
+that never bend, above all that no game files or anything made from them leave your PC.</p>
+<p>The goal of this page is the order of work: with dozens of contributors and agents working at once, the project moves
+fastest when everyone picks from the same priorities, claims before starting, and leaves a trail the next person can
+follow.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="1-where-work-comes-from">1. Where work comes from</h2><a class="sl-anchor-link" href="#1-where-work-comes-from"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “1. Where work comes from”</span></a></div>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>What lands there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub issues (game problem, build problem, idea)</td>
+<td>the record: version, hardware, place in the game, <code dir="auto">hookshot_log.txt</code></td>
+</tr>
+<tr>
+<td>Tracking issues (<code dir="auto">[Tracking] ...</code>)</td>
+<td>one per family of reports (AMD rendering, no mesh shaders, Linux, VRAM, missing walls, FPS, …)</td>
+</tr>
+<tr>
+<td>Discord #bug-reporting (forum)</td>
+<td>first reports, often without a log; turn the reproducible ones into issues</td>
+</tr>
+<tr>
+<td>Discord #dev-work</td>
+<td>claims, progress, review requests</td>
+</tr>
+<tr>
+<td>Discord #dev-stuff</td>
+<td>security scan results (Syntak): handled before anything else</td>
+</tr>
+<tr>
+<td>CI</td>
+<td>a red check on <code dir="auto">main</code> is everyone’s first problem</td>
+</tr>
+</tbody>
+</table>
+<div class="sl-heading-wrapper level-h2"><h2 id="2-priority-what-to-work-on-first">2. Priority: what to work on first</h2><a class="sl-anchor-link" href="#2-priority-what-to-work-on-first"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “2. Priority: what to work on first”</span></a></div>
+<p>Score a problem as <strong>severity x reach x confidence</strong> and work from the top. Write the three parts in the issue or the
+claim, so others can see why it was picked. The scored, sorted list of open work is <strong><a href="/Hookshot/guides/worklist/">docs/worklist.md</a></strong>:
+pick from its top, and add new problems there with their three parts.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="severity">Severity</h3><a class="sl-anchor-link" href="#severity"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Severity”</span></a></div>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Weight</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S0</td>
+<td>8</td>
+<td>Security issue; crash, hang, device lost or a PC freeze; lost or corrupted saves; the builder cannot build</td>
+</tr>
+<tr>
+<td>S1</td>
+<td>5</td>
+<td>Cannot progress or cannot start: black screen, missing walls that block a dungeon, softlock, menus unusable</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>3</td>
+<td>Wrong but playable: visual corruption, missing objects, audio out of sync, a large frame-rate loss (over 20%)</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>1</td>
+<td>Polish: small visual issues, small frame-rate gains, settings, features</td>
+</tr>
+</tbody>
+</table>
+<div class="sl-heading-wrapper level-h3"><h3 id="reach-the-systems-people-run">Reach: the systems people run</h3><a class="sl-anchor-link" href="#reach-the-systems-people-run"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Reach: the systems people run”</span></a></div>
+<p>Reach is the share of players on the hardware the problem affects (1.0 when it affects everyone). Two numbers feed it,
+and both change, so read them again rather than trusting old ones:</p>
+<ul>
+<li><strong>Who reports problems:</strong> <code dir="auto">python -I scripts/hardware_report.py</code> counts the GPU vendor, card class and OS in the
+issue forms (it needs the <code dir="auto">gh</code> CLI). As of 2026-11-10, of 399 issues that named their hardware: AMD 51%, NVIDIA 35%,
+Intel 3.5%; by class RX 6000 16%, AMD APUs and handhelds 12%, RX 9000 10%, RTX 40 9%, RTX 50 8.5%, RTX 30 7%, cards
+without mesh shaders 14.5%; Windows 57%, Linux and SteamOS 17%. This over-counts hardware where things break.</li>
+<li><strong>Who plays:</strong> the <a href="https://store.steampowered.com/hwsurvey/">Steam Hardware Survey</a> is the best public picture of
+PC gaming hardware (vendor, card, OS). Use its current numbers for the installed base.</li>
+</ul>
+<p>A problem that hits a large installed base, or that dominates the reports, ranks high either way.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="confidence">Confidence</h3><a class="sl-anchor-link" href="#confidence"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Confidence”</span></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reproduced by you, or by a maintainer, with a log</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Two or more reporters with logs</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>One report, or no log</td>
+<td>0.4 (ask for the log first)</td>
+</tr>
+</tbody>
+</table>
+<div class="sl-heading-wrapper level-h3"><h3 id="hardware-tiers-stability-across-machines">Hardware tiers: stability across machines</h3><a class="sl-anchor-link" href="#hardware-tiers-stability-across-machines"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Hardware tiers: stability across machines”</span></a></div>
+<p>A change must not break a higher tier to help a lower one.</p>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Hardware</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>NVIDIA RTX 20-50 and AMD RX 6000-9000, on Windows; the same on Linux (NVIDIA driver, Mesa RADV); Steam Deck</td>
+<td>Must keep working: test here before merge, regressions are S0/S1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>AMD APUs and handhelds (ROG Ally, Legion Go, 780M/890M/8060S), Intel Arc</td>
+<td>Fixed when reported, tested when someone with the hardware can</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Cards without mesh shaders (GTX 10/16, RX 5000 and older)</td>
+<td>Best effort through the fallback; never at a Tier 1 cost</td>
+</tr>
+</tbody>
+</table>
+<p>Today Tier 1 testing is mostly NVIDIA; AMD files half the reports. AMD stability is the largest gap, so an AMD Tier 1
+problem with a log outranks an NVIDIA one of the same severity.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="3-the-lifecycle">3. The lifecycle</h2><a class="sl-anchor-link" href="#3-the-lifecycle"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “3. The lifecycle”</span></a></div>
+<ol>
+<li><strong>Triage.</strong> Reproduce if you can. Find the tracking issue it belongs to, or open the issue (with the log). Score it
+(section 2).</li>
+<li><strong>Claim.</strong> Before starting, say so in Discord #dev-work and on the issue: what, why (the score), and on what
+hardware you can test. Search open PRs first: two people fixing the same thing is the most common waste here. Drop
+a claim out loud when you stop.</li>
+<li><strong>Fix.</strong> A branch from current <code dir="auto">main</code>, one topic. Find the cause before the fix: a log, a trace, a measurement.</li>
+<li><strong>Test.</strong>
+<ul>
+<li>A game-free test that fails without the change (see AGENTS.md: tests read the source).</li>
+<li><code dir="auto">python -I -B tests/run_all.py</code>, all of it.</li>
+<li>In the game, on your hardware: what you did and what you saw, with numbers from <code dir="auto">hookshot_log.txt</code> for performance.</li>
+<li>Add a row to <a href="/Hookshot/guides/tested-configurations/">tested configurations</a> for each run you measured.</li>
+<li>Say what you could not test (another OS, another vendor, real input devices).</li>
+</ul>
+</li>
+<li><strong>Pull request.</strong> Open the description with why the PR is needed; then what changed, how it was tested, what was
+not tested, and screenshots when it shows on screen. Link the issue and the tracking issue. Post the link in
+#dev-work.</li>
+<li><strong>Review.</strong> Answer every comment in the PR. Rebase onto <code dir="auto">main</code> before asking for review again: a PR that does not
+merge cleanly waits.</li>
+<li><strong>Merge and release.</strong> Release branches are merged back into <code dir="auto">main</code> right after a release, so that <code dir="auto">main</code>’s builds
+carry the release’s fixes and the right version string (<code dir="auto">git describe</code> only sees tags on <code dir="auto">main</code>’s history).</li>
+<li><strong>Verify.</strong> Ask the reporter to retest on the release, then close the issue, or keep it open on the tracking issue
+with what is left.</li>
+</ol>
+<div class="sl-heading-wrapper level-h2"><h2 id="4-the-security-lane">4. The security lane</h2><a class="sl-anchor-link" href="#4-the-security-lane"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “4. The security lane”</span></a></div>
+<p>Security comes first: a scan result in #dev-stuff is triaged before other work.</p>
+<ul>
+<li>Check every finding against the code; post the finding and the verdict for each (real / false positive, and why).</li>
+<li>Fix the real ones in a PR, marked as security in the title.</li>
+<li>Record false positives in the scanner as not exploitable, with the reason, so the next scan shows only new ones.</li>
+<li>Never paste secrets, tokens or the scanner’s private links in public channels.</li>
+</ul>
+<div class="sl-heading-wrapper level-h2"><h2 id="5-keeping-the-board-readable">5. Keeping the board readable</h2><a class="sl-anchor-link" href="#5-keeping-the-board-readable"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “5. Keeping the board readable”</span></a></div>
+<p>Suggested labels (a maintainer creates them): <code dir="auto">priority:P0</code> to <code dir="auto">priority:P3</code> (from the score), <code dir="auto">hw:nvidia</code>, <code dir="auto">hw:amd</code>,
+<code dir="auto">hw:intel</code>, <code dir="auto">hw:no-mesh-shaders</code>, <code dir="auto">os:linux</code>, <code dir="auto">os:steamdeck</code>, <code dir="auto">needs-log</code>, <code dir="auto">reproduced</code>, <code dir="auto">claimed</code>. With them, the
+next thing to work on is the top of <code dir="auto">is:open label:reproduced -label:claimed sort:priority</code>.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="for-agents">For agents</h2><a class="sl-anchor-link" href="#for-agents"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “For agents”</span></a></div>
+<ul>
+<li>Start here, then AGENTS.md, then CONTRIBUTING.md.</li>
+<li>Pick from the top of <a href="/Hookshot/guides/worklist/">docs/worklist.md</a>; add a scored row there for a new problem you find.</li>
+<li>Prefer problems you can reproduce on the hardware you run on.</li>
+<li>Claim before working, report progress where you claimed, and post the PR there.</li>
+<li>Measure, don’t guess: every claim about speed or correctness carries the log line, the test or the screenshot.</li>
+<li>Never open a PR whose tests you have not run, or that has not been rebased onto <code dir="auto">main</code>.</li>
+</ul>
+</div><footer class="sl-flex astro-ddtxxk7k"><div class="meta sl-flex astro-ddtxxk7k"><a href="https://github.com/bibigurl-yum/Hookshot/edit/docs/starlight-preview/docs/workflow.md" class="sl-flex print:hidden astro-qlekgd3o"><svg aria-hidden="true" class="astro-qlekgd3o astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.2em;"><path d="M22 7.24a1 1 0 0 0-.29-.71l-4.24-4.24a1 1 0 0 0-1.1-.22 1 1 0 0 0-.32.22l-2.83 2.83L2.29 16.05a1 1 0 0 0-.29.71V21a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .76-.29l10.87-10.93L21.71 8c.1-.1.17-.2.22-.33a1 1 0 0 0 0-.24v-.14l.07-.05ZM6.83 20H4v-2.83l9.93-9.93 2.83 2.83L6.83 20ZM18.17 8.66l-2.83-2.83 1.42-1.41 2.82 2.82-1.41 1.42Z"/></svg>Edit page</a></div><div class="pagination-links print:hidden astro-b5raizh3" dir="ltr"><a href="/Hookshot/guides/versioning/" rel="prev" class="astro-b5raizh3"><svg aria-hidden="true" class="astro-b5raizh3 astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg><span class="astro-b5raizh3">Previous<br class="astro-b5raizh3"><span class="link-title astro-b5raizh3">Versioning</span></span></a><a href="/Hookshot/reference/pipeline-states/" rel="next" class="astro-b5raizh3"><svg aria-hidden="true" class="astro-b5raizh3 astro-hkc32dio" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg><span class="astro-b5raizh3">Next<br class="astro-b5raizh3"><span class="link-title astro-b5raizh3">Pipeline lists</span></span></a></div></footer><div class="field-footer"><p><strong>HOOKSHOT</strong> <span>The community field guide</span></p><nav aria-label="Footer"><a href="/Hookshot/about/">About this preview</a><a href="https://github.com/NotRexed/Hookshot/issues/new/choose">Report a bug ↗</a><a href="https://github.com/NotRexed/Hookshot">Source ↗</a></nav><small>Independent community project. Not affiliated with Nintendo. Built with Astro Starlight.</small></div></div></div></main></div></div></div></div></body></html>
